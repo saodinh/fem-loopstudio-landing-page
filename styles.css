@@ -44,7 +44,8 @@ a {
 
 .container {
     margin: 0 auto;
-    width: 77%;
+    width: 87%;
+    max-width: 1110px;
 }
 
 @media (max-width: 700px) {
@@ -161,7 +162,6 @@ a {
 /* Intro Section */
 .section-intro {
     padding: 16rem 0;
-    outline: 2px solid green;
 }
 
 .section-intro-container {
@@ -169,8 +169,6 @@ a {
 }
 
 .section-intro-content {
-    /* outline: 2px solid green; */
-
     position: absolute;
     width: 60%;
     min-width: 330px;
@@ -205,7 +203,7 @@ a {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 840px) {
     .section-intro {
         padding: 9rem 0 3rem;
     }
@@ -225,6 +223,16 @@ a {
         text-align: center;
         max-width: 55ch;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-intro .img-desktop {
+        display: none;
+    }
+
+    .section-intro .img-mobile {
+        display: block;
     }
 }
 
@@ -287,12 +295,12 @@ a {
     }
 }
 
-@media (max-width: 800px) {
-    .img-mobile {
+@media (max-width: 900px) {
+    .section-creations .img-mobile {
         display: block;
     }
 
-    .img-desktop {
+    .section-creations .img-desktop {
         display: none;
     }
 
@@ -300,6 +308,12 @@ a {
         margin-bottom: 8rem;
     }
 
+    .section-creations-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
     .section-creations-container {
         grid-template-columns: 1fr;
     }
@@ -322,6 +336,7 @@ a {
         justify-self: center;
     }
 }
+
 /* ============
     Footer
 ============== */
@@ -360,12 +375,22 @@ a {
 }
 
 @media (max-width: 900px) {
+    .footer .logo {
+        margin: 0 auto;
+    }
+
     .footer-container {
         flex-direction: column;
         gap: 2rem;
         align-items: center;
     }
 
+    .social-list {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
     .footer-nav .nav-list {
         flex-direction: column;
         align-items: center;
@@ -374,9 +399,5 @@ a {
     .footer-nav .nav-item {
         margin-left: 0;
         padding: 1rem 0;
-    }
-
-    .social-list {
-        justify-content: center;
     }
 }
