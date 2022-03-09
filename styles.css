@@ -135,6 +135,7 @@ a {
 .mobile-open .nav-list {
     flex-direction: column;
     width: 87%;
+    max-width: 1110px;
     margin: 0 auto;
 }
 
