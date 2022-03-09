@@ -189,7 +189,7 @@ a {
     background: url(./images/desktop/image-hero.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: 65rem;
     padding-top: 20rem;
 }
 
